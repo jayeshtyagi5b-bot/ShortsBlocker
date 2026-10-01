@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Shorts Blocker</string>
+    <string name="service_desc">Closes the YouTube Shorts screen whenever it opens.</string>
+</resources>
