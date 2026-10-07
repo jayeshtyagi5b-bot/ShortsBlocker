@@ -18,20 +18,20 @@ class MainActivity : Activity() {
             gravity = Gravity.CENTER
             setPadding(64, 64, 64, 64)
         }
-        val text = TextView(this).apply {
+        val infoText = TextView(this).apply {
             text = "Shorts Blocker\n\nTurn on \"Shorts Blocker\" in Accessibility settings (under Installed/Downloaded apps). " +
                 "After that, YouTube Shorts will close automatically."
             textSize = 16f
             gravity = Gravity.CENTER
         }
-        val button = Button(this).apply {
+        val openBtn = Button(this).apply {
             text = "Open Accessibility Settings"
             setOnClickListener {
                 startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
             }
         }
-        layout.addView(text)
-        layout.addView(button)
+        layout.addView(infoText)
+        layout.addView(openBtn)
         setContentView(layout)
     }
 }
